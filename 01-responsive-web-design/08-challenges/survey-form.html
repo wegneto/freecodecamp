@@ -5,7 +5,62 @@
     <meta charset="utf-8">
     <title>Survey Form</title>
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--color-white);
+            margin: 0;
+        }
 
+        h1 {
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+
+        h1,
+        p {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            width: 100%;
+            margin: 3.125rem auto 0 auto;
+        }
+
+        .description {
+            font-weight: 200;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        @media (min-width: 480px) {
+            form {
+                padding: 2.5rem;
+            }
+        }
+
+        .input-textarea {
+            min-height: 120px;
+            width: 100%;
+            padding: 0.625rem;
+            resize: vertical;
+        }
     </style>
 </head>
 
@@ -13,20 +68,17 @@
     <div id="container">
         <header class="header">
             <h1 id="title" class="text-center">Some random survey form</h1>
-            <p id="description" class="description text-cente r">
-              Thank you for taking the time to help us improve the platform
+            <p id="description" class="description text-center">
+                Ut id aliquip sunt velit cupidatat non voluptate. Minim aliquip amet adipisicing nostrud occaecat aliqua
+                laboris
+                consequat eu deserunt aliquip. Lorem amet excepteur velit do ad aliquip ad reprehenderit consectetur
+                adipisicing
+                elit ad labore. Irure magna est est deserunt ex fugiat nostrud. Fugiat excepteur proident labore in
+                fugiat
+                in
+                ut. Mollit laborum esse eiusmod fugiat minim ut elit non anim.
             </p>
-          </header>
-        <h1 id="title"></h1>
-        <p id="description">
-            Ut id aliquip sunt velit cupidatat non voluptate. Minim aliquip amet adipisicing nostrud occaecat aliqua
-            laboris
-            consequat eu deserunt aliquip. Lorem amet excepteur velit do ad aliquip ad reprehenderit consectetur
-            adipisicing
-            elit ad labore. Irure magna est est deserunt ex fugiat nostrud. Fugiat excepteur proident labore in fugiat
-            in
-            ut. Mollit laborum esse eiusmod fugiat minim ut elit non anim.
-        </p>
+        </header>
         <form id="survey-form">
             <label id="name-label" for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Type your name" required>
@@ -68,7 +120,7 @@
             </fieldset>
 
             <label for="comments">Say what you think:</label>
-            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <textarea name="comments" id="comments" cols="30" rows="10" class="input-textarea"></textarea>
 
             <input id="submit" type="submit" value="Submit">
 

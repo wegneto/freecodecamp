@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Some random survey form</h1>
+            <p id="description" class="description text-cente r">
+              Thank you for taking the time to help us improve the platform
+            </p>
+          </header>
+        <h1 id="title"></h1>
+        <p id="description">
+            Ut id aliquip sunt velit cupidatat non voluptate. Minim aliquip amet adipisicing nostrud occaecat aliqua
+            laboris
+            consequat eu deserunt aliquip. Lorem amet excepteur velit do ad aliquip ad reprehenderit consectetur
+            adipisicing
+            elit ad labore. Irure magna est est deserunt ex fugiat nostrud. Fugiat excepteur proident labore in fugiat
+            in
+            ut. Mollit laborum esse eiusmod fugiat minim ut elit non anim.
+        </p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Type your name" required>
+
+            <label id="email-label" for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Type your email" required>
+
+            <label id="number-label" for="number">Enter a number:</label>
+            <input type="number" name="number" id="number" min="1" max="5" placeholder="Enter a number between 1 and 5"
+                required>
+
+            <label id="dropdown-label" for="dropdown">Select one from the options:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="1">Lorem ipsum dolor</option>
+                <option value="2">Nisi ad ea consequat excepteur ullamco anim velit.</option>
+                <option value="3">Eiusmod ad id eiusmod non velit aliquip sint pariatur pariatur consequat nisi aliqua
+                    in.
+                </option>
+            </select>
+
+            <fieldset>
+                <legend>Choose one from options bellow:</legend>
+                <label for="radio1"><input type="radio" name="radio-group" id="radio1" value="1">Lorem adipisicing id
+                    aute Lorem excepteur.</label>
+                <label for="radio2"><input type="radio" name="radio-group" id="radio2" value="2">Mollit reprehenderit
+                    sint eiusmod ut aute.</label>
+                <label for="radio3"><input type="radio" name="radio-group" id="radio3" value="3">Non officia ullamco ex
+                    pariatur commodo mollitquis.</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose all that apply from options bellow:</legend>
+                <label for="checkbox1"><input type="checkbox" name="checkbox-group" id="checkbox1" value="1">Labore
+                    officia cupidatat sunt ut sunt ullamco laborum officia enim eu Lorem.</label>
+                <label for="checkbox2"><input type="checkbox" name="checkbox-group" id="checkbox2" value="2">Aliqua non
+                    exercitation sunt enim aute.</label>
+                <label for="checkbox3"><input type="checkbox" name="checkbox-group" id="checkbox3" value="3">Nulla sit
+                    sunt aliquip cupidatat ipsum nisi qui laboris.</label>
+            </fieldset>
+
+            <label for="comments">Say what you think:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+            <input id="submit" type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
